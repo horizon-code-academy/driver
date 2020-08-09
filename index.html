@@ -5,8 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Driver test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-7 form">
+          <h1 class="display-1">Test driver info:</h1>
+          <form id="form-driver">
+            <label for="firstname">First name:</label>
+            <input id="firstname" type="text" class="form-control" />
+            <label for="lastname">Last name:</label>
+            <input id="lastname" type="text" class="form-control" />
+            <label for="age">Age:</label>
+            <input id="age" type="number" class="form-control" />
+            <label for="license">License age:</label>
+            <input id="license" type="number" class="form-control" disabled />
+            <br />
+            <button class="btn btn-danger" type="reset">Reset</button>
+            <button class="btn btn-success" type="submit" disabled>
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="col-5 result">
+          <p>Fullname:</p>
+          <p id="fullname-display"></p>
+          <p>Age:</p>
+          <p id="age-display"></p>
+          <p>License age:</p>
+          <p id="license-display"></p>
+          <p>Info:</p>
+          <p id="info-display"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
